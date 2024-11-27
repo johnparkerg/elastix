@@ -1,6 +1,10 @@
 name: test-clang-format
 
-on: [push]
+on:
+  push:
+    branches:
+      - '*'
+  workflow_dispatch:
 
 jobs:
   build:
